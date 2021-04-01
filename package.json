@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "ketchup": "git fetch && git reset --hard origin/lecture"
+    "ketchup": "git fetch && git reset --hard origin/lecture",
+    "seed": "knex seed:run",
+    "rollback": "knex migrate:rollback",
+    "latest": "knex migrate:latest"
   },
   "dependencies": {
     "express": "^4.17.1",
